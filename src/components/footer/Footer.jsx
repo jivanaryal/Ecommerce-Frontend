@@ -131,7 +131,7 @@ const Footer = () => {
       <div className="border-2 border-black">
         <hr className="text-black" />
       </div>
-      <div className="flex justify-between text-lg pt-3 ">
+      <div className="flex justify-between lg:text-lg md:text-base text-sm  pt-3 ">
         <div className="left">© 2023 TechMart. All rights reserved.</div>
         <div className="flex">
           <p>Teams of Services</p>
