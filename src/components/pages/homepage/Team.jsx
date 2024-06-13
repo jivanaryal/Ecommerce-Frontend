@@ -53,7 +53,7 @@ const Team = () => {
       <p className="text-white text-lg pb-10 pt-4">
         Get to know the talented individuals behind our compnay
       </p>
-      <div className="flex flex-wrap   gap-20">
+      <div className="flex justify-center md:justify-start flex-wrap   gap-20">
         {TeamDetails.map((val, i) => {
           return (
             <div

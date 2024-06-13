@@ -54,7 +54,7 @@ const Footer = () => {
 
   return (
     <div className=" w-full px-10 bg-secondColor mt-20 text-white font-medium py-7">
-      <div className="grid grid-cols-2">
+      <div className="grid lg:grid-cols-2 grid-cols-1">
         <div className="left">
           <div className="rounded-full bg-thirdColor  h-24 w-24">
             <img

@@ -23,7 +23,7 @@ const Services = () => {
       <h1 className="text-3xl ml-4 p-4">
         Why Choose <span className="text-mainColor">Us?</span>
       </h1>
-      <div className="flex justify-center gap-20 py-20">
+      <div className="flex justify-center flex-wrap gap-20 py-20">
         {serviceItem.map((val, i) => {
           return (
             <div key={i} className="flex flex-col  items-center">

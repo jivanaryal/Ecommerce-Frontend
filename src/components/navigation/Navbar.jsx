@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex gap-6 mr-4  ">
             {NavItem.map((val, i) => {
               return (
-                <div key={i}>
+                <div key={i} className="lg:block hidden">
                   <Link to={val.path}>
                     {" "}
                     <div className="capitalize  hover:text-[#f5e2e2]">
@@ -52,7 +52,7 @@ const Navbar = () => {
               );
             })}
           </div>
-          <div className="flex gap-4 mr-4 relative ">
+          <div className="lg:flex gap-4 mr-4 relative lg:visible hidden">
             <input
               type="text"
               name="search"
@@ -62,7 +62,7 @@ const Navbar = () => {
             <CiSearch className="absolute top-2  text-xl text-black right-2" />
           </div>
         </div>
-        <div className="flex items-center justify-center relative   gap-10 text-lg">
+        <div className=" items-center justify-center relative   gap-10 text-lg flex">
           <Link to={"/cart"}>
             {" "}
             <IoMdCart className="text-2xl  hover:text-[#f5e2e2] " />{" "}

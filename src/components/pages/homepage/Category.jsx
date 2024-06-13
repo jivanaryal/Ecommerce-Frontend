@@ -35,7 +35,7 @@ const Category = () => {
             View all
           </button>
         </div>
-        <div className="content flex gap-20  items-center   pt-10 ">
+        <div className="content grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2  gap-20  items-center flex-wrap w-full md:justify-start justify-center   pt-10 ">
           {CatContent.map((val, i) => {
             return (
               <div key={i}>
