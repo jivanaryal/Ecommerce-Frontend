@@ -73,9 +73,9 @@ const Cart = () => {
   const [index, setIndex] = useState(1);
   return (
     <div className="bg-[#F4F4F4]">
-      <div className="w-9/12  mx-auto ">
+      <div className="lg:w-9/12 w-11/12  mx-auto ">
         <div className="grid grid-cols-12 gap-2 py-2">
-          <div className="left col-span-8 flex flex-col gap-6">
+          <div className="left md:col-span-8 col-span-full flex flex-col gap-6">
             {/* first Div  */}
             <div className="flex justify-between px-2 border-2 py-2 text-gray-500 text-sm bg-white">
               <div className="flex items-center gap-2">
@@ -109,7 +109,7 @@ const Cart = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="right flex text-xs">
+                      <div className="right  md:block hidden bg-red-500 text-xs">
                         <div>{val.delivery}:</div>
                         <div className="font-bold"> {val.time}</div>
                       </div>
@@ -160,7 +160,7 @@ const Cart = () => {
               })}
             </div>
           </div>
-          <div className="right bg-white text-gray-500 text-sm col-span-4 border-2 h-fit px-4 py-2">
+          <div className="right bg-white text-gray-500 text-sm col-span-4 border-2 h-fit px-4 py-2 md:block hidden">
             <h1 className="text-base text-black pb-2">Order Summary</h1>
             <div className="flex flex-col gap-3">
               {Summary.map((val, i) => {

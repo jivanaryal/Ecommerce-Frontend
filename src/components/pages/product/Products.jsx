@@ -217,7 +217,7 @@ const Products = () => {
   return (
     <div className="w-10/12 mx-auto pt-10">
       {/* Top Box  */}
-      <div className="top flex justify-between items-center">
+      <div className="top flex flex-wrap justify-between items-center">
         <div className="left">
           338 items found for <span className="text-mainColor">"Phone"</span>
         </div>
@@ -232,7 +232,7 @@ const Products = () => {
             <option value="high">High to Low</option>
           </select>
         </div>
-        <div className="flex items-center gap-4 text-2xl">
+        <div className="flex items-center gap-4 text-2xl md:block hidden">
           <p className="text-sm">View: </p>
           <MdDashboard
             onClick={() => {
@@ -250,11 +250,11 @@ const Products = () => {
 
       {/* Products Items  */}
       {half === "half" && (
-        <div className="grid grid-cols-4 gap-10 pt-10 items-center">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 justify-center place-items-center gap-10 pt-10 items-center">
           {currentPosts.map((val, i) => (
             <div
               key={i}
-              className="w-60 h-[340px]  gap-2 flex flex-col items-start boxess "
+              className="lg:w-60 md:w-64 w-72 h-[340px]  gap-2 flex flex-col items-start boxess "
             >
               <img
                 src={val.image}

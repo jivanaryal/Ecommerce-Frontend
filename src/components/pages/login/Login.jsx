@@ -27,13 +27,13 @@ const Login = () => {
   });
   return (
     <div className="flex justify-center items-center h-screen ">
-      <div className="h-fit ">
+      <div className="h-fit md:block hidden ">
         <img src={signupImage} />
       </div>
       <div className="bg-white p-6 px-20 h-fit w-fit ">
         <div className="flex flex-col justify-center  items-center ">
-          <div className=" h-28 w-28 ">
-            <img src={logo} className="h-fit w-fit" />
+          <div className=" h-28 w-28">
+            <img src={logo} className="h-fit w-fit " />
           </div>
           <div className="text-2xl text-mainColor font-bold">Login</div>
         </div>

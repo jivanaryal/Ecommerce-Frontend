@@ -43,7 +43,7 @@ const Signup = () => {
   });
   return (
     <div className="flex justify-center items-center h-screen ">
-      <div className="h-fit ">
+      <div className="h-fit md:block hidden">
         <img src={signupImage} />
       </div>
       <div className="bg-white p-6 px-20 h-fit w-fit ">

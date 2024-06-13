@@ -110,9 +110,9 @@ const ExploreProducts = () => {
               <div className="flex flex-col gap-1">
                 <div className="flex justify-between items-center">
                   {/* The image section and its icons relatively */}
-                  <div className="bg-thirdColor rounded-sm h-[250px] w-[230px] flex justify-center items-center relative ">
+                  <div className="bg-thirdColor rounded-sm md:h-[250px] h-[120px]  md:w-[230px] w-[120px] flex justify-center items-center relative ">
                     <div className="flex">
-                      <img src={val.image} className="mx-auto  h-36" />
+                      <img src={val.image} className="mx-auto  md:h-36" />
                     </div>
                     <div className="flex flex-col gap-4 absolute right-3 top-5">
                       <div className="p-1 bg-white rounded-full">

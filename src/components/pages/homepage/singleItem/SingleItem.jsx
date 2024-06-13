@@ -31,15 +31,15 @@ const SingleItem = () => {
   return (
     <div className="bg-gray-300 font-sans">
       <div className=" py-10">
-        <div className=" px-4 bg-white  w-10/12 mx-auto grid grid-cols-12  border-2">
-          <div className="left col-span-4 pt-5">
+        <div className=" px-4 bg-white  w-10/12 mx-auto grid  lg:grid-cols-12 md:grid-cols-9 grid-cols-3 border-2">
+          <div className="left lg:col-span-4 md:col-span-4 col-span-full  pt-5">
             <img
               src={location.state.image}
               alt=""
-              className="max-w-[300px] min-w-[250px]"
+              className="max-w-[300px] md:w-[250px] w-[400px]"
             />
           </div>
-          <div className="middle col-span-5 pt-5">
+          <div className="middle lg:col-span-5 md:col-span-5 col-span-full pt-5">
             <div className="title text-2xl pb-3">{location.state.name}</div>
             <div className="flex pb-2">
               <div className="star">
@@ -111,7 +111,7 @@ const SingleItem = () => {
               </button>
             </div>
           </div>
-          <div className=" flex flex-col  gap-2 pt-8 px-2 col-span-3 bg-[#FAFAFA] shadow-sm text-black">
+          <div className=" flex flex-col  gap-2 pt-8 px-2 lg:col-span-3 col-span-full bg-[#FAFAFA] shadow-sm text-black">
             <p>Delivery</p>
             <div className="flex gap-4 items-center">
               <div className="logo">

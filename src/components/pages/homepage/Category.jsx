@@ -42,7 +42,7 @@ const Category = () => {
                 <Link to={"/category"}>
                   <div
                     key={i}
-                    className="border-[1px]  rounded-md border-gray-800 w-40 py-10 flex items-center justify-center flex-col"
+                    className="border-[1px]  rounded-md border-gray-800 lg:w-40 w-full py-10 flex items-center justify-center flex-col"
                   >
                     <div className="text-3xl">{val.logos}</div>
                     <div className="text-lg">{val.name}</div>
